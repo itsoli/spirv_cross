@@ -68,6 +68,7 @@ extern "C"
         bool vertex_invert_y;
         uint32_t version;
         bool es;
+        bool enable_420pack_extension;
     } ScGlslCompilerOptions;
 
     typedef struct ScResource

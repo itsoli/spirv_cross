@@ -1621,6 +1621,7 @@ pub mod root {
         pub vertex_invert_y: bool,
         pub version: u32,
         pub es: bool,
+        pub enable_420pack_extension: bool,
     }
     impl Clone for ScGlslCompilerOptions {
         fn clone(&self) -> Self { *self }

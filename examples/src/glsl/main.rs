@@ -10,7 +10,7 @@ fn main() {
     let mut ast = spirv::Ast::<glsl::Target>::parse(&module).unwrap();
     ast.set_compiler_options(&glsl::CompilerOptions {
         version: glsl::Version::V4_60,
-        vertex: glsl::CompilerVertexOptions::default(),
+        ..Default::default()
     })
     .unwrap();
 
